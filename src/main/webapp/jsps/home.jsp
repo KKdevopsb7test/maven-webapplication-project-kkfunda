@@ -46,7 +46,7 @@
 <body>
 
 <header>
-    <h1> Welcome to KK DEVOPS AWS Portal New Batch start from september</h1>
+    <h1> Welcome to KK DEVOPS AWS Portal New Batch start from september 20th</h1>
     <h3>Training | Development | Consulting</h3>
 </header>
 
