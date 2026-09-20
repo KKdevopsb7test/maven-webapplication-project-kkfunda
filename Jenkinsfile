@@ -1,5 +1,5 @@
 
-
+//dev pipeline
 pipeline
 {
 	
@@ -15,7 +15,7 @@ pipeline
               steps
               {
                   notifyBuild('STARTED') 
-                 git 'https://github.com/KKdevopsb7test/maven-webapplication-project-kkfunda.git'
+                 git branch:'dev', url:'https://github.com/KKdevopsb7test/maven-webapplication-project-kkfunda.git'
               }
            }
            stage('compile')
@@ -59,6 +59,11 @@ pipeline
         """
               }
            }
+		   
+		   stage('bsnl-qa')
+		   {
+		   build job : 'bsnl-qa'  //this is downstream job
+		   }
 
    }  //stages ending
 
